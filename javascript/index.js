@@ -4022,8 +4022,8 @@ function generateSpace() {
     castSelection.innerHTML = '';
     if (totalCastSize < 3)
         window.alert("Please, use at least 3 queens on your cast!");
-    else if (totalCastSize > 20)
-        window.alert("Please, use less than 20 queens in your cast!");
+    else if (totalCastSize > 50)
+        window.alert("Please, use less than 50 queens in your cast!");
     else
         for (let i = 0; i < castSize; i++) {
             let select = document.createElement("select");
@@ -5946,9 +5946,9 @@ function getLSConfessionals(FirstQ, SecondQ, screen)
 {
     let firstpart = [
         "No shade to ",
-        "I kind of don't want to lipsync against ",
+        "I don't want to lipsync against ",
         "I cannot let ",
-        "I didn\'t want to be in this place, but ",
+        "I didn't want to be in this place, but ",
         "I came here to win. I cannot let ",
         "This is my chance to prove to the judges, I deserve to be here. Sorry "
     ];
@@ -5965,9 +5965,9 @@ function getLSConfessionals(FirstQ, SecondQ, screen)
     let aslines = [
         'This is my chance to prove myself to Ru.',
         'I will do anything in my power to win this.',
-        "Being in the top 2, feels really great! Would be even better with that lipsync win.",
-        "This is my chance to prove myself. I'm not letting that slipping from my hands.",
-        "I firmly believe in the lipstick that I've picked. And if I don't win something that I don't want to might happen.",
+        "Being in the top 2, feels really great! It would be even better with that lipsync win.",
+        "This is my chance to prove myself that I am good enough. I'm not letting that slip from my hands.",
+        "I firmly believe in the lipstick that I've picked.",
         "Come on give me this money!",
         "Time to do what I do best, and it's to outperform."
     ]
@@ -7864,13 +7864,13 @@ function GenerateSafeUntuckedEvent(SafeQueens, Untucked)
                 if(SafeQueens[randomqueen].GetRelation(SafeQueens[secondqueen])<=-2)
                 {
                     Untucked.createBold(SafeQueens[randomqueen].getName()+" is getting into a fight with "+SafeQueens[secondqueen].getName()+"!");
-                    Untucked.createBold(SafeQueens[secondqueen].getName()+" say that "+SafeQueens[randomqueen].getName()+" should have been out the competition the first week.");
+                    Untucked.createBold(SafeQueens[secondqueen].getName()+" says that "+SafeQueens[randomqueen].getName()+" should have been out of the competition in the first week.");
                     currentCast[currentCast.indexOf(SafeQueens[randomqueen])].ChangeRelation(SafeQueens[secondqueen],-3);
                     currentCast[currentCast.indexOf(SafeQueens[secondqueen])].ChangeRelation(SafeQueens[randomqueen],-3);
                 }
                 else
                 {
-                    Untucked.createBold(SafeQueens[randomqueen].getName()+" compliment "+SafeQueens[secondqueen].getName()+" on their runway tonight.");
+                    Untucked.createBold(SafeQueens[randomqueen].getName()+" compliments "+SafeQueens[secondqueen].getName()+" on their runway tonight.");
                     currentCast[currentCast.indexOf(SafeQueens[randomqueen])].ChangeRelation(SafeQueens[secondqueen],1);
                     currentCast[currentCast.indexOf(SafeQueens[secondqueen])].ChangeRelation(SafeQueens[randomqueen],1);
                 }
@@ -7887,7 +7887,7 @@ function GenerateSafeUntuckedEvent(SafeQueens, Untucked)
 
             case 2:
                 Untucked.createImage(SafeQueens[randomqueen].image);
-                Untucked.createBold(SafeQueens[randomqueen].getName()+" is talking about they felt like she felt they was going to be in the top.");
+                Untucked.createBold(SafeQueens[randomqueen].getName()+" is talking about how they felt like they were going to be in the top.");
                 break;
 
             case 3:
@@ -7896,24 +7896,24 @@ function GenerateSafeUntuckedEvent(SafeQueens, Untucked)
                 Untucked.createBold(SafeQueens[randomqueen].getName()+" felt like something "+SafeQueens[secondqueen].getName()+" said was rude towards them.");
                 if(randomNumber(0,1)==0)
                 {
-                    Untucked.createBold(SafeQueens[secondqueen].getName()+" say that they shouldn't be mad, because it was nothing and that "+SafeQueens[randomqueen].getName()+" is just overeacting.");
+                    Untucked.createBold(SafeQueens[secondqueen].getName()+" says that they shouldn't be mad, because it was nothing and that "+SafeQueens[randomqueen].getName()+" is just overreacting.");
                     currentCast[currentCast.indexOf(SafeQueens[randomqueen])].ChangeRelation(SafeQueens[secondqueen],-1);
                     currentCast[currentCast.indexOf(SafeQueens[secondqueen])].ChangeRelation(SafeQueens[randomqueen],-1);
                 }
                 else
                 {
-                    Untucked.createBold(SafeQueens[secondqueen].getName()+" say to "+SafeQueens[randomqueen].getName()+", that they did not mean to be rude, and apologize if it came across that way.");
+                    Untucked.createBold(SafeQueens[secondqueen].getName()+" says to "+SafeQueens[randomqueen].getName()+", that they did not mean to be rude, and apologize if it came across that way.");
                 }
                 break;
             case 4:
                 Untucked.createImage(SafeQueens[randomqueen].image);
                 if(SafeQueens[randomqueen].trackRecord[SafeQueens[randomqueen].trackRecord.length-1]== "BTM2" || SafeQueens[randomqueen].trackRecord[SafeQueens[randomqueen].trackRecord.length-1]== "BTM3" || SafeQueens[randomqueen].trackRecord[SafeQueens[randomqueen].trackRecord.length-1]== "BTM4" || SafeQueens[randomqueen].trackRecord[SafeQueens[randomqueen].trackRecord.length-1]== "BTM5" || SafeQueens[randomqueen].trackRecord[SafeQueens[randomqueen].trackRecord.length-1]== "BTM6")
                 {
-                    Untucked.createBold(SafeQueens[randomqueen].getName()+" say that they are happy being safe, after being in the bottom last week.");
+                    Untucked.createBold(SafeQueens[randomqueen].getName()+" says that they are happy being safe, after being in the bottom last week.");
                 }
                 else
                 {
-                    Untucked.createBold(SafeQueens[randomqueen].getName()+" say that they wanted to be in the top, but is happy that they are not in bottom.");
+                    Untucked.createBold(SafeQueens[randomqueen].getName()+" says that they wanted to be in the top, but is happy that they are not in bottom.");
                 }
                 break;
 
@@ -7924,7 +7924,7 @@ function GenerateSafeUntuckedEvent(SafeQueens, Untucked)
                 {
                     Untucked.createImage(SafeQueens[threequeen].image);
                 }
-                Untucked.createBold(SafeQueens[randomqueen].getName()+" ask the other queens who do they feel like is in the bottom.");
+                Untucked.createBold(SafeQueens[randomqueen].getName()+" asks the other queens who they feel like is in the bottom.");
                 let tqueen = randomNumber(0,bottomQueens.length-1);
                 let othertqueen;
                 let istroublesame = true;
@@ -7944,16 +7944,16 @@ function GenerateSafeUntuckedEvent(SafeQueens, Untucked)
                     }
                 }
 
-                Untucked.createBold(SafeQueens[secondqueen].getName()+" say that they felt like "+bottomQueens[tqueen].getName()+"'s performance was not the best, and that they might be in trouble.");
+                Untucked.createBold(SafeQueens[secondqueen].getName()+" says that they felt like "+bottomQueens[tqueen].getName()+"'s performance was not the best, and that they might be in trouble.");
                 if(SafeQueens.length>3)
                 {
                     if(randomNumber(0,1)==0)
                     {
-                        Untucked.createBold(SafeQueens[threequeen].getName()+" say that they agree and that indeed "+bottomQueens[tqueen].getName()+" might be in trouble.");
+                        Untucked.createBold(SafeQueens[threequeen].getName()+" says that they agree and that indeed "+bottomQueens[tqueen].getName()+" might be in trouble.");
                     }
                     else
                     {
-                        Untucked.createBold(SafeQueens[threequeen].getName()+" say they don't necessarily "+bottomQueens[othertqueen].getName()+" might be in trouble too.");
+                        Untucked.createBold(SafeQueens[threequeen].getName()+" says they think "+bottomQueens[othertqueen].getName()+" might be in trouble too.");
                     }
                 }
                 break;
@@ -8008,13 +8008,13 @@ function GenerateUntuckedEvent(Queens, Untucked)
                 if(currentCast[randomqueen].GetRelation(currentCast[secondqueen])<=-2)
                 {
                     Untucked.createBold(currentCast[randomqueen].getName()+" is getting into a fight with "+currentCast[secondqueen].getName()+"!");
-                    Untucked.createBold(currentCast[secondqueen].getName()+" say that "+currentCast[randomqueen].getName()+" should have been out the competition the first week.");
+                    Untucked.createBold(currentCast[secondqueen].getName()+" says that "+currentCast[randomqueen].getName()+" should have been out the competition the first week.");
                     currentCast[currentCast.indexOf(currentCast[randomqueen])].ChangeRelation(currentCast[secondqueen],-3);
                     currentCast[currentCast.indexOf(currentCast[secondqueen])].ChangeRelation(currentCast[randomqueen],-3);
                 }
                 else
                 {
-                    Untucked.createBold(currentCast[randomqueen].getName()+" compliment "+currentCast[secondqueen].getName()+" on their runway tonight.");
+                    Untucked.createBold(currentCast[randomqueen].getName()+" compliments "+currentCast[secondqueen].getName()+" on their runway tonight.");
                     currentCast[currentCast.indexOf(currentCast[randomqueen])].ChangeRelation(currentCast[secondqueen],1);
                     currentCast[currentCast.indexOf(currentCast[secondqueen])].ChangeRelation(currentCast[randomqueen],1);
                 }
@@ -8039,14 +8039,14 @@ function GenerateUntuckedEvent(Queens, Untucked)
                             if(top2.indexOf(rdmtopqueen)==-1)
                             {
                                 if(all_stars)
-                                    Untucked.createBold(topQueens[rdmtopqueen].getName()+" say that they really wished that they were in the top 2.");
+                                    Untucked.createBold(topQueens[rdmtopqueen].getName()+" says that they really wished they were in the top 2.");
                                 if(lipsync_assassin)
-                                    Untucked.createBold(topQueens[rdmtopqueen].getName()+" say that they really wished that they were the top allstar of the week.");
+                                    Untucked.createBold(topQueens[rdmtopqueen].getName()+" says that they really wished that they were the top allstar of the week.");
                             }
                     }
                     else
                     {
-                            Untucked.createBold(topQueens[rdmtopqueen].getName()+" say that they think they have a really good chance at winning this challenge.");
+                            Untucked.createBold(topQueens[rdmtopqueen].getName()+" says that they think they have a really good chance at winning this challenge.");
                     }
                 }
                 break;
@@ -8057,11 +8057,11 @@ function GenerateUntuckedEvent(Queens, Untucked)
                     Untucked.createImage(bottomQueens[rdmbtmqueen].image);
                     if(all_stars || lipsync_assassin)
                     {
-                        Untucked.createBold(bottomQueens[rdmbtmqueen].getName()+" say that they really felt like they dissapointed the judges.");
+                        Untucked.createBold(bottomQueens[rdmbtmqueen].getName()+" says they really felt like they dissapointed the judges.");
                     }
                     else
                     {
-                            Untucked.createBold(bottomQueens[rdmbtmqueen].getName()+" say that they might be afraid that they will have to lipsync tonight.");
+                            Untucked.createBold(bottomQueens[rdmbtmqueen].getName()+" says that they're afraid they might have to lipsync tonight.");
                     }
                 }
                 break;
@@ -8091,16 +8091,16 @@ function GenerateUntuckedEvent(Queens, Untucked)
                     {
                         Untucked.createImage(topQueens[rdmtopqueen].image);
                     }
-                    Untucked.createBold(currentCast[rdmsafequeen].getName()+" ask "+bottomQueens[rdmbtmqueen].getName()+" what they thought about their critiques.");
+                    Untucked.createBold(currentCast[rdmsafequeen].getName()+" asks "+bottomQueens[rdmbtmqueen].getName()+" what they thought about their critiques.");
                     if(randomNumber(0,1)==0)
                     {
 
-                            Untucked.createBold(bottomQueens[rdmbtmqueen].getName()+" respond that they thought their critiques were completely false.");
+                            Untucked.createBold(bottomQueens[rdmbtmqueen].getName()+" responds that they thought their critiques were completely false.");
                             if(response==1)
                             {
                                 if(randomNumber(0,1)==1)
                                 {
-                                    Untucked.createBold(topQueens[rdmtopqueen].getName()+" say that "+bottomQueens[rdmbtmqueen].getName()+" is completely out of touch with reality.");
+                                    Untucked.createBold(topQueens[rdmtopqueen].getName()+" says that "+bottomQueens[rdmbtmqueen].getName()+" is completely out of touch with reality.");
                                     currentCast[currentCast.indexOf(topQueens[rdmtopqueen])].ChangeRelation(bottomQueens[rdmbtmqueen],-1);
                                     currentCast[currentCast.indexOf(bottomQueens[rdmbtmqueen])].ChangeRelation(topQueens[rdmtopqueen],-1);
                                 }
@@ -8176,7 +8176,7 @@ function UntuckedSafeQueens()
 
     if(SafeQueens.length==1)
     {
-        Untucked.createBold(SafeQueens[0].getName()+" grab a drink and sits down while waiting for the other queens.");
+        Untucked.createBold(SafeQueens[0].getName()+" grabs a drink and sits down while waiting for the other queens.");
     }
     else
     {
@@ -8245,83 +8245,93 @@ function UntuckedSafeQueens()
 function GetCompliment()
 {
     let actingc =[
+		', you were on top of your game this week and it showed in the challenge, your acting was one of the best of the night. ',
+		', everything felt so natural, you were a standout tonight.',
         ', the acting was so naturally funny! It was really good.',
         ', you have such good physical comedy. You were a joy to watch!',
-        ', each time you came onto the screen, you stole the show.',
+        ', each time you came on screen, you stole the show.',
         ', I loved seeing you on screen. It was so good each time.',
         ', I feel like you found the perfect balance between comedy and seriousness. It was great.'
     ];
 
     let standupc =[
+		', you should be very proud of your performance tonight, the other queens should be worried. ',
+		', you came out here tonight and stole the show, incredible job tonight. ',
         ', your stand up was very natural. Good job, this week.',
-        ', I saw how nervous you were, but you completely knocked it out of the park once you got in. Great performance.',
+        ', I saw how nervous you were at first, but you completely knocked it out of the park once you got into it. Great performance.',
         ', this is how you do stand up. It felt very natural and funny, I loved every second of it.',
         ', you were funny from begginning to end. You had a really good flow. Good job.',
-        ', I cannot say how much I was entertained, it was really good.'
+        ', I was so entertained the entire time, Great job.'
     ];
 
     let roastc =[
-        ', your roast was very funny, and you felt natural up there. Good job, this week.',
+        ', your roast was very funny, and you felt natural up there. Good job this week.',
         ', we asked you for a roast, and damn you brought the flamethrower. Great performance.',
         ', this is how you do a roast. You needed to find that fine line, and you did. Really good job tonight.',
         ', you were funny from begginning to end. You had a really good flow. Good job.',
-        ', I cannot say how much I was entertained by your roast, it was really punch after punch after punch. You should be proud of yourself.'
+        ', I was so entertained by your roast, it was really punch after punch after punch. You should be proud of yourself.'
+		', you are so shady... and i LOVED it! Tonight was clearly your night.',
     ];
 
     let commercialc =[
-        ', you branded yourself all over, it was really good.',
-        ', you did exactly what we needed of you, it was coherent, funny, ... . Outstanding job tonight!',
+        ', you nailed it on the branding, this was very you. It was really good.',
+        ', you did exactly what we needed of you, it was coherent, funny, .... Outstanding job tonight!',
         ', your commercial was very you. It was really great, I loved it!',
         ', this challenge was totally up your alley, it had EVERYTHING! Great job, this week'
+		', you made me want to buy what your selling, and thats what we were looking for tonight.',
     ];
     let marketingc = [
-        ', tonight, girl are you hidden marketer ? It was so GOOD!',
+        ', tonight, girl are you a hidden marketer ? It was so GOOD!',
         ', you had ups and down and presented well. All the elements were there to make it really good.',
         ', you had probably the best ad, it was funny and serious at the time!',
         ', the design of your ad was simply amazing. Good job tonight.'
     ];
     let dancec = [
         ', you made it look very easy, and you looked at ease. Good job!',
-        ', you nailed everything single aspect of it and you looked gorgeous congrats!',
-        ', you had something hard to do and you knocked it out of the park!',
+        ', you nailed every single aspect of it and you looked gorgeous while doing it, congrats!',
+        ', you had hard choreography tonight, and you knocked it out of the park!',
         ', each time you came on stage, I was like omg what are they going to do ? You killed it!',
         ', you had such an ease to do this! It was really great to watch!'
+		', I can tell you are a dancer, because tonight you killed it.',
     ];
     let makeoverc = [
-        ', you completely nailed this, you and your partner looks great.',
-        ', you branded this successfully! If I saw your partner alone, I would have knowned it was yours.',
-        ', you look so beautiful tonight and your partner does too! We really see family resemblance.',
-        ', this look is very you! It\'s beautiful, and so does your partner.'
+        ', you completely nailed this, you and your partner look great.',
+        ', you branded this successfully! If I saw your partner alone, I would instantly know this was your work.',
+        ', you look so beautiful tonight and your partner does too! We really see the family resemblance.',
+        ', this look is very you! It\'s beautiful, and your parent looks incredible.'
     ];
     let runwayc = [
         ', your looks were very good. I loved them all.',
         ', can you give me your wardrobe ? They were all so good!',
-        ', did you sew all of theses yourself, if so you are a really good sewer. Congrats!',
+        ', did you sew all of these yourself? If so you are a really good sewer. Congrats!',
         ', you literally ate up all of your looks. Great job tonight.'
+		', you took my breath away every time you were out on this runway tonight.',
     ];
 
     let designc =[
-        ', this outfit is beautiful, I love every details of it. Good job, this week.',
+        ', this outfit is beautiful, I love every detail of it. Good job, this week.',
         ', You look majestic tonight. I love how you worked the fabric, it looks so great! Congrats.',
         ', sometimes simple is bad, but here simple is smart. You made a simple dress but the attention to details is immaculate. You did really good tonight.',
-        ', this is so good. I love it! Can you make some for me ? No, but for real this outfit is FIRE! I loved it.',
-        ', are you a sewer ? Because if not you should become one. It is simply gorgeours from concept to realization.',
+        ', this is so good. I love it! Can you make me one? No, but for real this outfit is FIRE! I loved it.',
+        ', are you a sewer? Because if not you should become one. It is simply gorgeous from concept to realization.',
         ', this outfit is very well made. It is really good.',
         ', this challenge was up your alley, and you made lemonade out of lemons. This look is great, from the styling of everything down to the jewelry, just perfect.'
+		', You look like a goddess tonight, and thats high praise coming from me.',
     ];
 
     let improvc = [
         ', you looked really at ease , and you played it smart!',
         ', you were really funny! And you knew how to bounce back from other people!',
         ', you are really good at improv, I can tell you it was so GOOD!',
-        ', I loved your performance, you were really great!'
+        ', I loved your performance, you were really great!'\
+		', The entire performance was smooth from beginning to end, you didn\'t stumble once. Great job tonight.',
     ];
     let snatchgamec = [
-        ', your character was brilliant you were incredibly funny.',
-        ', each time it felt you got boring you bounced back up!',
+        ', your character was brilliant, and you were incredibly funny.',
+        ', every time it felt boring you were able to bounce right back up and keep on going. Great job.',
         ', you picked a very good character, it was really funny from beginning to end.',
         ', you played this really smart, each time you had a chance to be in the spot light, you took it. Great job.',
-        ', you really knew how to bounce back from others people, and it really made you shine.'
+        ', you really knew how to bounce back from other people, and it really made you shine.'
     ];
     let rusicalc = [
         ', you took a role and made it your own, you WERE the character!',
@@ -8440,17 +8450,18 @@ function GetCritiques()
 {
     let actingc =[
         ', the acting was just not good, it felt really stiff.',
-        ', you had such a good start, but then you faded into the background which was not good...',
+        ', you had such a good start, but then you faded into the background...',
         ', each time you came onto the screen, you looked more lost than the last time.',
-        ', I feel like you were lacking confidence, and it showed.',
-        ', I feel like you wanted to stand out so much, you stood out for the wrong reasons.',
-        ', you could probably went down the road of so bad, it\'s you really missed that opportunity.',
+        ', I feel like you were lacking confidence, which is so not like you.',
+        ', I feel like you wanted to stand out so much, that you stood out for the wrong reasons.',
+        ', you could have taken this so much further, it was quite dissapointing.',
         ', I felt like you struggled a lot with the acting, and it showed on the final product.'
+		', I expected more from you tonight, this wasn\'t your best work.',
     ];
 
     let standupc =[
         ', your stand up was very stiff. You looked very uneased.',
-        ', I saw how nervous you were, and you never got of it. Get out of your head now, before it fucks you up.',
+        ', I saw how nervous you were, and you never got out of it. Get out of your head now, before it fucks you up.',
         ', your jokes just were not landing and you kept repeating yourself. It was not good.',
         ', you took a long time to get to the first joke, for it to be not funny.',
         ', you started off strong, but you were getting worse as time went on. For it to be successfull you need to start and end with a bang.'
@@ -8713,12 +8724,12 @@ function Critiques()
         let randomreason = [
             ", because I feel like they dropped the ball on the challenge.",
             ", because I feel like they were the weakest in this challenge.",
-            ", I just feel like they haven't done in this challenge.",
+            ", They just did not do well in this challenge. It was a mess.",
             ", because their critiques were the worst tonight.",
-            ", and I know that the person we saw today in the challenge, wasn't them.",
+            ", but I know that the person we saw today in the challenge, wasn't them.",
             ", because they just didn't perform to the maximum of their ability",
             ", they were just bad, no shade to them.",
-            ", It's just that tonight they haven't been up to rise to the occasion."
+            ", It's just that tonight they didn't rise to the occasion."
         ];
 
         MS.createHorizontalLine();
@@ -8889,7 +8900,7 @@ function ASUntucked()
                                 Untucked.createBold(bottomQueens[j].getName()+" propose to "+top2[0].getName()+" the idea of an alliance.");
                                 if(randomNumber(0,5)>3 && fally == false)
                                 {
-                                    Untucked.createBold(top2[0].getName()+" accept the proposition of "+bottomQueens[j].getName()+" to make an alliance.");
+                                    Untucked.createBold(top2[0].getName()+" accepts the proposition of "+bottomQueens[j].getName()+" to make an alliance.");
                                     top1choice.splice(top1choice.indexOf(bottomQueens[j]),1);
                                     currentCast[currentCast.indexOf(top2[0])].AddAlliance(bottomQueens[j]);
                                     currentCast[currentCast.indexOf(bottomQueens[j])].AddAlliance(top2[0]);
@@ -9617,105 +9628,6 @@ let stephanie = new Queen("Stephanie Prince", 6, 6, 7, 10, 6, 9, 6, "Stephanie",
 let suki = new Queen("Suki Doll", 8, 7, 6, 9, 5, 9, 5, "Suki",false, "CA2");
 let synthia = new Queen("Synthia Kiss", 6, 8, 10, 7, 9, 7, 9, "Synthia",false, "CA2");
 let can_season2 = [adriana, beth, eve, giametric, icesis, kendall, kimoraA, oceane, pythia, stephanie, suki, synthia];
-//DRAG RACE HOLLAND 
-let chelsea = new Queen("Chelsea Boy", 9, 10, 7, 7, 10, 12, 6, "Chelsea",false, "HO1");
-let envy = new Queen("Envy Peru", 11, 11, 11, 8, 11, 13, 11, "Envy",false, "HO1");
-let janey = new Queen("Janey Jacké", 7, 6, 13, 11, 6, 11, 12, "Janey",false, "HO1");
-let madamem = new Queen("Madame Madness", 8, 6, 5, 6, 5, 8, 7, "MadameM",false, "HO1");
-let mama = new Queen("Ma'Ma Queen", 9, 6, 5, 6, 6, 10, 7, "Mama",false, "HO1");
-let megan = new Queen("Megan Schoonbrood", 7, 6, 6, 5, 6, 9, 8, "Megan",false, "HO1");
-let abby = new Queen("Miss Abby OMG", 5, 6, 11, 6, 5, 8, 10, "Abby",false, "HO1");
-let patty = new Queen("Patty Pam-Pam", 5, 6, 6, 6, 5, 9, 7, "Patty",false, "HO1");
-let roem = new Queen("Roem", 6, 6, 5, 5, 5, 6, 5, "Roem",false, "HO1");
-let sederginne = new Queen("Sederginne", 7, 6, 6, 7, 5, 13, 5, "Sederginne",false, "HO1");
-let hol_season1 = [chelsea, envy, janey, madamem, mama, megan, abby, patty, roem, sederginne];
-//DRAG RACE HOLLAND SEASON 2
-let ivyelise = new Queen("Ivy-Elyse", 6, 8, 5, 4, 8, 5, 10, "IvyE",false, "HO2");
-let juicy = new Queen("Juicy Kouture", 5, 6, 5, 5, 4, 4, 5, "Juicy",false, "HO2");
-let keta = new Queen("Keta Minaj", 9, 12, 9, 7, 12, 11, 9, "Keta",false, "HO2");
-let love = new Queen("Love Masisi", 6, 5, 6, 8, 5, 10, 7, "Love",false, "HO2");
-let mlp = new Queen("My Little Puny", 10, 10, 10, 7, 9, 10, 10, "MLP",false, "HO2");
-let reggy = new Queen("Reggy B", 6, 6, 6, 5, 6, 8, 8, "Reggy",false, "HO2");
-let tabitha = new Queen("Tabitha", 6, 7, 8, 6, 5, 7, 8, "Tabitha",false, "HO2");
-let countess = new Queen("The Countess", 7, 5, 4, 10, 6, 12, 5, "Countess",false, "HO2");
-let vanessaC = new Queen("Vanessa Van Cartier", 7, 5, 6, 8, 5, 12, 8, "VanessaC",false, "HO2");
-let vivaldi = new Queen("Vivaldi", 8, 8, 8, 7, 8, 12, 8, "Vivaldi",false, "HO2");
-let hol_season2 = [ivyelise, juicy, keta, love, mlp, reggy, tabitha, countess, vanessaC, vivaldi];
-//DRT SEASON 1
-let amadiva = new Queen("Amadiva", 9, 6, 7, 9, 3, 9, 6, "Amadiva",false, "TH1");
-let annee = new Queen("Anneé Maywong", 9, 9, 7, 10, 4, 10, 9, "Annee",false, "TH1");
-let b = new Queen("B Ella", 7, 9, 6, 8, 9, 7, 7, "B",false, "TH1");
-let bunny = new Queen("Bunny Be Fly", 7, 5, 5, 8, 5, 8, 6, "Bunny",false, "TH1");
-let dearis = new Queen("Dearis Doll", 7, 7, 7, 8, 8, 8, 8, "Dearis",false, "TH1");
-let jaja = new Queen("JAJA", 8, 6, 7, 9, 5, 9, 9, "Jaja",false, "TH1");
-let meannie = new Queen("Meannie Minaj", 7, 5, 5, 6, 5, 5, 5, "Meannie",false, "TH1");
-let morrigan = new Queen("Morrigan", 5, 6, 7, 5, 7, 7, 7, "Morrigan",false, "TH1");
-let natalia = new Queen("Natalia Pliacam", 9, 9, 7, 9, 9, 10, 9, "Natalia",false, "TH1");
-let petchra = new Queen("Petchra", 7, 7, 6, 7, 8, 7, 9, "Petchra",false, "TH1");
-let drt_season1 = [amadiva, annee, b, bunny, dearis, jaja, meannie, morrigan, natalia, petchra];
-//DRT SEASON 2
-let angele = new Queen("Angele Anang", 9, 9, 9, 9, 8, 10, 10, "Angele",false, "TH2");
-let bandit = new Queen("Bandit", 7, 7, 7, 8, 6, 8, 9, "Bandit",false, "TH2");
-let genie = new Queen("Genie", 9, 8, 9, 9, 7, 9, 8, "Genie",false, "TH2");
-let kana = new Queen("Kana Warrior", 8, 8, 8, 7, 7, 9, 10, "Kana",false, "TH2");
-let kandyz = new Queen("Kandy Zyanide", 9, 9, 9, 9, 9, 9, 7, "KandyZ",false, "TH2");
-let katy = new Queen("Katy Killer", 7, 8, 7, 8, 7, 8, 8, "Katy",false, "TH2");
-let m = new Queen("M Stranger Fox", 5, 6, 5, 6, 6, 8, 8, "M",false, "TH2");
-let maya = new Queen("Maya B'haro", 9, 8, 6, 9, 9, 8, 7, "Maya",false, "TH2");
-let mocha = new Queen("Mocha Diva", 9, 9, 6, 8, 9, 7, 9, "Mocha",false, "TH2");
-let gimhuay = new Queen("Miss Gimhuay", 8, 9, 7, 9, 8, 9, 8, "Gimhuay",false, "TH2");
-let silver = new Queen("Silver Sonic", 5, 5, 7, 6, 7, 7, 8, "Silver",false, "TH2");
-let srimala = new Queen("Srimala", 7, 7, 8, 7, 8, 9, 9, "Srimala",false, "TH2");
-let tormai = new Queen("Tormai", 8, 8, 7, 7, 6, 8, 9, "Tormai",false, "TH2");
-let vanda = new Queen("Vanda Miss Joaquim", 9, 8, 9, 7, 7, 9, 9, "Vanda",false, "TH2");
-let drt_season2 = [angele, bandit, genie, kana, kandyz, katy, m, maya, mocha, gimhuay, silver, srimala, tormai, vanda];
-//DRAG RACE DOWN UNDER
-let anita = new Queen("Anita Wigl'it", 6, 10, 8, 6, 10, 8, 5, "Anita",false, "DU1");
-let art = new Queen("Art Simone", 6, 4, 5, 8, 4, 10, 4, "Art",false, "DU1");
-let cocoj = new Queen("Coco Jumbo", 6, 5, 6, 6, 5, 8, 10, "CocoJ",false, "DU1");
-let elektra = new Queen("Elektra Shock", 10, 6, 12, 8, 4, 7, 11, "Elektra",false, "DU1");
-let etc = new Queen("Etcetera Etcetera", 5, 8, 8, 7, 8, 8, 8, "Etc",false, "DU1");
-let jojo = new Queen("Jojo Zaho", 5, 5, 5, 5, 5, 6, 6, "Jojo",false, "DU1");
-let karen = new Queen("Karen From Finance", 5, 6, 5, 5, 7, 7, 5, "Karen",false, "DU1");
-let kita = new Queen("Kita Mean", 9, 9, 7, 7, 9, 9, 8, "Kita",false, "DU1");
-let maxi = new Queen("Maxi Shield", 6, 6, 5, 9, 7, 8, 8, "Maxi",false, "DU1");
-let drdu = [anita, art, cocoj, elektra, etc, jojo, karen, kita, maxi];
-//DRAG RACE ESPAÑA 1
-let arantxa = new Queen("Arantxa Castilla La Mancha", 6, 8, 6, 7, 8, 9, 7, "Arantxa",false, "ES1");
-let carmenf = new Queen("Carmen Farala", 10, 10, 10, 14, 8, 13, 10, "CarmenF",false, "ES1");
-let dovima = new Queen("Dovima Nurmi", 8, 7, 5, 7, 8, 10, 6, "Dovima",false, "ES1");
-let drag = new Queen("Drag Vulcano", 6, 6, 5, 7, 6, 9, 6, "Drag",false, "ES1");
-let hugaceo = new Queen("Hugáceo Crujiente", 5, 5, 5, 12, 6, 10, 8, "Hugaceo",false, "ES1");
-let inti = new Queen("Inti", 6, 6, 6, 7, 5, 11, 6, "Inti",false, "ES1");
-let killer = new Queen("Killer Queen", 6, 10, 8, 9, 11, 9, 8, "Killer",false, "ES1");
-let pupi = new Queen("Pupi Poisson", 10, 11, 7, 5, 11, 6, 7, "Puppy",false, "ES1");
-let sagittaria = new Queen("Sagittaria", 7, 8, 8, 9, 7, 10, 8, "Sagittaria",false, "ES1");
-let macarena = new Queen("The Macarena", 5, 5, 6, 4, 5, 5, 5, "Macarena",false, "ES1");
-let dres_season1 = [arantxa, carmenf, dovima, drag, hugaceo, inti, killer, pupi, sagittaria, macarena];
-// DRAG RACE ESPAÑA 2
-let arielRec = new Queen("Ariel Rec", 7, 7, 7, 7, 7, 7, 7, "ArielRec",false, "ES2");
-let diamante = new Queen("Diamante Merybrown", 7, 7, 7, 7, 7, 7, 7, "Diamante",false, "ES2");
-let sethlas = new Queen("Drag Sethlas", 7, 7, 7, 7, 7, 7, 7, "DragSethlas",false, "ES2");
-let estrella = new Queen("Estrella Xtravaganza", 7, 7, 7, 7, 7, 7, 7, "Estrella",false, "ES2");
-let jota = new Queen("Jota Carajota", 7, 7, 7, 7, 7, 7, 7, "Jota",false, "ES2");
-let juriji = new Queen("Juriji Der Klee", 7, 7, 7, 7, 7, 7, 7, "Juriji",false, "ES2");
-let marina = new Queen("Marina", 7, 7, 7, 7, 7, 7, 7, "Marina",false, "ES2");
-let marisa = new Queen("Marisa Prisa", 7, 7, 7, 7, 7, 7, 7, "Marisa",false, "ES2");
-let onyx = new Queen("Onyx", 7, 7, 7, 7, 7, 7, 7, "Onyx",false, "ES2");
-let samantha = new Queen("Samantha Ballentines", 7, 7, 7, 7, 7, 7, 7, "Samantha",false, "ES2");
-let sharonne = new Queen("Sharonne", 7, 7, 7, 7, 7, 7, 7, "Sharonne",false, "ES2");
-let venedita = new Queen("Venedita Von Däsh", 7, 7, 7, 7, 7, 7, 7, "Venedita",false, "ES2");
-let dres_season2 = [arielRec, diamante, sethlas, estrella, jota, juriji, marina, marisa, onyx, samantha, sharonne, venedita];
-//DRAG RACE ITALIA
-let ava = new Queen("Ava Hangar", 8, 7, 5, 5, 6, 6, 6, "Ava",false, "IT1");
-let divinity = new Queen("Divinity", 9, 6, 8, 7, 6, 8, 7, "Divinity",false, "IT1");
-let elecktra = new Queen("Elecktra Bionic", 7, 8, 8, 8, 9, 9, 8, "Elecktra",false, "IT1");
-let enorma = new Queen("Enorma Jean", 8, 8, 6, 6, 8, 7, 6, "Enorma",false, "IT1");
-let farida = new Queen("Farida Kant", 7, 6, 8, 11, 5, 11, 8, "Farida",false, "IT1");
-let ivana = new Queen("Ivana Vamp", 6, 5, 6, 6, 6, 6, 5, "Ivana",false, "IT1");
-let riche = new Queen("Le Riche", 6, 8, 6, 8, 9, 8, 7, "Riche",false, "IT1");
-let luquisha = new Queen("Luquisha Lubamba", 7, 6, 6, 5, 7, 6, 7, "Luquisha",false, "IT1");
-let italia = [ava, divinity, elecktra, enorma, farida, ivana, riche, luquisha];
 //SPECIAL 
 let pangina = new Queen("Pangina Heals", 9, 7, 14, 11, 8, 13, 14, "Pangina",false,"THH");
 let international_as = [baga, blu, cheryl, janey, jimbo, jujubee, lemon, monique, pangina];
