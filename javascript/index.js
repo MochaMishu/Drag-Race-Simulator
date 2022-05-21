@@ -28,6 +28,7 @@ let readsbase=[
 ];
 
 let entrancelinesreg = [
+	"Testing Entrance Line.",
     "Y'all better fear, because I am here.",
     "Just to let y'all known, the winner has arrived.",
     "Well hello there!",
