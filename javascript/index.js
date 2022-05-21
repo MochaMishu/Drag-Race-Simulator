@@ -5,7 +5,7 @@ let setlssong = [];
 
 let readsbase=[
     ", how nice of you to save the oceans by injecting the plastic into yourself! And using the rest of the trash for your drag.",
-    ", look at how short is this skirt! It is supposed to be the same size as your talent ?",
+    ", Look how short this skirt is, is it supposed to be the same size as your talent?",
     ", these other girls are gonna say you have terrible makeup skills, you have no fashion sense, and you’re dumb as a rock. But they’re wrong! You don’t have terrible makeup skills.",
     ", if you are America’s sweetheart then America needs a heart transplant.",
     ", next time you death drop reverse that and drop dead.",
@@ -565,7 +565,6 @@ class ActingChallenge {
             desc1[desc1["commercial about "] = 2] = "commercial about ";
             desc1[desc1["60's inspired film about "] = 3] = "60's inspired film about ";
             desc1[desc1["80's inspired film about "] = 4] = "80's inspired film about ";
-			desc1[desc1["2000's inspired film about "] = 5] = "2000's inspired film about ";
         })(desc1 || (desc1 = {}));
         let desc2;
         (function (desc2) {
@@ -576,9 +575,9 @@ class ActingChallenge {
             desc2[desc2["gayness."] = 4] = "gayness.";
             desc2[desc2["celebrities."] = 5] = "celebrities.";
             desc2[desc2["the future."] = 6] = "the future.";
-            desc2[desc2["Reality TV."] = 7] = "Reality TV.";
+            desc2[desc2["the rainbow."] = 7] = "the rainbow.";
         })(desc2 || (desc2 = {}));
-        description.innerHTML = "The queens will act in a " + desc1[randomNumber(0, 5)] + desc2[randomNumber(0, 7)];
+        description.innerHTML = "The queens will act in a " + desc1[randomNumber(0, 4)] + desc2[randomNumber(0, 6)];
     }
     rankPerformances() {
         for (let i = 0; i < currentCast.length; i++) {
@@ -5946,9 +5945,9 @@ function getLSConfessionals(FirstQ, SecondQ, screen)
 {
     let firstpart = [
         "No shade to ",
-        "I don't want to lipsync against ",
+        "I kind of don't want to lipsync against ",
         "I cannot let ",
-        "I didn't want to be in this place, but ",
+        "I didn\'t want to be in this place, but ",
         "I came here to win. I cannot let ",
         "This is my chance to prove to the judges, I deserve to be here. Sorry "
     ];
@@ -5965,9 +5964,9 @@ function getLSConfessionals(FirstQ, SecondQ, screen)
     let aslines = [
         'This is my chance to prove myself to Ru.',
         'I will do anything in my power to win this.',
-        "Being in the top 2, feels really great! It would be even better with that lipsync win.",
-        "This is my chance to prove myself that I am good enough. I'm not letting that slip from my hands.",
-        "I firmly believe in the lipstick that I've picked.",
+        "Being in the top 2, feels really great! Would be even better with that lipsync win.",
+        "This is my chance to prove myself. I'm not letting that slipping from my hands.",
+        "I firmly believe in the lipstick that I've picked. And if I don't win something that I don't want to might happen.",
         "Come on give me this money!",
         "Time to do what I do best, and it's to outperform."
     ]
@@ -7864,13 +7863,13 @@ function GenerateSafeUntuckedEvent(SafeQueens, Untucked)
                 if(SafeQueens[randomqueen].GetRelation(SafeQueens[secondqueen])<=-2)
                 {
                     Untucked.createBold(SafeQueens[randomqueen].getName()+" is getting into a fight with "+SafeQueens[secondqueen].getName()+"!");
-                    Untucked.createBold(SafeQueens[secondqueen].getName()+" says that "+SafeQueens[randomqueen].getName()+" should have been out of the competition in the first week.");
+                    Untucked.createBold(SafeQueens[secondqueen].getName()+" say that "+SafeQueens[randomqueen].getName()+" should have been out the competition the first week.");
                     currentCast[currentCast.indexOf(SafeQueens[randomqueen])].ChangeRelation(SafeQueens[secondqueen],-3);
                     currentCast[currentCast.indexOf(SafeQueens[secondqueen])].ChangeRelation(SafeQueens[randomqueen],-3);
                 }
                 else
                 {
-                    Untucked.createBold(SafeQueens[randomqueen].getName()+" compliments "+SafeQueens[secondqueen].getName()+" on their runway tonight.");
+                    Untucked.createBold(SafeQueens[randomqueen].getName()+" compliment "+SafeQueens[secondqueen].getName()+" on their runway tonight.");
                     currentCast[currentCast.indexOf(SafeQueens[randomqueen])].ChangeRelation(SafeQueens[secondqueen],1);
                     currentCast[currentCast.indexOf(SafeQueens[secondqueen])].ChangeRelation(SafeQueens[randomqueen],1);
                 }
@@ -7887,7 +7886,7 @@ function GenerateSafeUntuckedEvent(SafeQueens, Untucked)
 
             case 2:
                 Untucked.createImage(SafeQueens[randomqueen].image);
-                Untucked.createBold(SafeQueens[randomqueen].getName()+" is talking about how they felt like they were going to be in the top.");
+                Untucked.createBold(SafeQueens[randomqueen].getName()+" is talking about they felt like she felt they was going to be in the top.");
                 break;
 
             case 3:
@@ -7896,24 +7895,24 @@ function GenerateSafeUntuckedEvent(SafeQueens, Untucked)
                 Untucked.createBold(SafeQueens[randomqueen].getName()+" felt like something "+SafeQueens[secondqueen].getName()+" said was rude towards them.");
                 if(randomNumber(0,1)==0)
                 {
-                    Untucked.createBold(SafeQueens[secondqueen].getName()+" says that they shouldn't be mad, because it was nothing and that "+SafeQueens[randomqueen].getName()+" is just overreacting.");
+                    Untucked.createBold(SafeQueens[secondqueen].getName()+" say that they shouldn't be mad, because it was nothing and that "+SafeQueens[randomqueen].getName()+" is just overeacting.");
                     currentCast[currentCast.indexOf(SafeQueens[randomqueen])].ChangeRelation(SafeQueens[secondqueen],-1);
                     currentCast[currentCast.indexOf(SafeQueens[secondqueen])].ChangeRelation(SafeQueens[randomqueen],-1);
                 }
                 else
                 {
-                    Untucked.createBold(SafeQueens[secondqueen].getName()+" says to "+SafeQueens[randomqueen].getName()+", that they did not mean to be rude, and apologize if it came across that way.");
+                    Untucked.createBold(SafeQueens[secondqueen].getName()+" say to "+SafeQueens[randomqueen].getName()+", that they did not mean to be rude, and apologize if it came across that way.");
                 }
                 break;
             case 4:
                 Untucked.createImage(SafeQueens[randomqueen].image);
                 if(SafeQueens[randomqueen].trackRecord[SafeQueens[randomqueen].trackRecord.length-1]== "BTM2" || SafeQueens[randomqueen].trackRecord[SafeQueens[randomqueen].trackRecord.length-1]== "BTM3" || SafeQueens[randomqueen].trackRecord[SafeQueens[randomqueen].trackRecord.length-1]== "BTM4" || SafeQueens[randomqueen].trackRecord[SafeQueens[randomqueen].trackRecord.length-1]== "BTM5" || SafeQueens[randomqueen].trackRecord[SafeQueens[randomqueen].trackRecord.length-1]== "BTM6")
                 {
-                    Untucked.createBold(SafeQueens[randomqueen].getName()+" says that they are happy being safe, after being in the bottom last week.");
+                    Untucked.createBold(SafeQueens[randomqueen].getName()+" say that they are happy being safe, after being in the bottom last week.");
                 }
                 else
                 {
-                    Untucked.createBold(SafeQueens[randomqueen].getName()+" says that they wanted to be in the top, but is happy that they are not in bottom.");
+                    Untucked.createBold(SafeQueens[randomqueen].getName()+" say that they wanted to be in the top, but is happy that they are not in bottom.");
                 }
                 break;
 
@@ -7924,7 +7923,7 @@ function GenerateSafeUntuckedEvent(SafeQueens, Untucked)
                 {
                     Untucked.createImage(SafeQueens[threequeen].image);
                 }
-                Untucked.createBold(SafeQueens[randomqueen].getName()+" asks the other queens who they feel like is in the bottom.");
+                Untucked.createBold(SafeQueens[randomqueen].getName()+" ask the other queens who do they feel like is in the bottom.");
                 let tqueen = randomNumber(0,bottomQueens.length-1);
                 let othertqueen;
                 let istroublesame = true;
@@ -7944,16 +7943,16 @@ function GenerateSafeUntuckedEvent(SafeQueens, Untucked)
                     }
                 }
 
-                Untucked.createBold(SafeQueens[secondqueen].getName()+" says that they felt like "+bottomQueens[tqueen].getName()+"'s performance was not the best, and that they might be in trouble.");
+                Untucked.createBold(SafeQueens[secondqueen].getName()+" say that they felt like "+bottomQueens[tqueen].getName()+"'s performance was not the best, and that they might be in trouble.");
                 if(SafeQueens.length>3)
                 {
                     if(randomNumber(0,1)==0)
                     {
-                        Untucked.createBold(SafeQueens[threequeen].getName()+" says that they agree and that indeed "+bottomQueens[tqueen].getName()+" might be in trouble.");
+                        Untucked.createBold(SafeQueens[threequeen].getName()+" say that they agree and that indeed "+bottomQueens[tqueen].getName()+" might be in trouble.");
                     }
                     else
                     {
-                        Untucked.createBold(SafeQueens[threequeen].getName()+" says they think "+bottomQueens[othertqueen].getName()+" might be in trouble too.");
+                        Untucked.createBold(SafeQueens[threequeen].getName()+" say they don't necessarily "+bottomQueens[othertqueen].getName()+" might be in trouble too.");
                     }
                 }
                 break;
@@ -8008,13 +8007,13 @@ function GenerateUntuckedEvent(Queens, Untucked)
                 if(currentCast[randomqueen].GetRelation(currentCast[secondqueen])<=-2)
                 {
                     Untucked.createBold(currentCast[randomqueen].getName()+" is getting into a fight with "+currentCast[secondqueen].getName()+"!");
-                    Untucked.createBold(currentCast[secondqueen].getName()+" says that "+currentCast[randomqueen].getName()+" should have been out the competition the first week.");
+                    Untucked.createBold(currentCast[secondqueen].getName()+" say that "+currentCast[randomqueen].getName()+" should have been out the competition the first week.");
                     currentCast[currentCast.indexOf(currentCast[randomqueen])].ChangeRelation(currentCast[secondqueen],-3);
                     currentCast[currentCast.indexOf(currentCast[secondqueen])].ChangeRelation(currentCast[randomqueen],-3);
                 }
                 else
                 {
-                    Untucked.createBold(currentCast[randomqueen].getName()+" compliments "+currentCast[secondqueen].getName()+" on their runway tonight.");
+                    Untucked.createBold(currentCast[randomqueen].getName()+" compliment "+currentCast[secondqueen].getName()+" on their runway tonight.");
                     currentCast[currentCast.indexOf(currentCast[randomqueen])].ChangeRelation(currentCast[secondqueen],1);
                     currentCast[currentCast.indexOf(currentCast[secondqueen])].ChangeRelation(currentCast[randomqueen],1);
                 }
@@ -8039,14 +8038,14 @@ function GenerateUntuckedEvent(Queens, Untucked)
                             if(top2.indexOf(rdmtopqueen)==-1)
                             {
                                 if(all_stars)
-                                    Untucked.createBold(topQueens[rdmtopqueen].getName()+" says that they really wished they were in the top 2.");
+                                    Untucked.createBold(topQueens[rdmtopqueen].getName()+" say that they really wished that they were in the top 2.");
                                 if(lipsync_assassin)
-                                    Untucked.createBold(topQueens[rdmtopqueen].getName()+" says that they really wished that they were the top allstar of the week.");
+                                    Untucked.createBold(topQueens[rdmtopqueen].getName()+" say that they really wished that they were the top allstar of the week.");
                             }
                     }
                     else
                     {
-                            Untucked.createBold(topQueens[rdmtopqueen].getName()+" says that they think they have a really good chance at winning this challenge.");
+                            Untucked.createBold(topQueens[rdmtopqueen].getName()+" say that they think they have a really good chance at winning this challenge.");
                     }
                 }
                 break;
@@ -8057,11 +8056,11 @@ function GenerateUntuckedEvent(Queens, Untucked)
                     Untucked.createImage(bottomQueens[rdmbtmqueen].image);
                     if(all_stars || lipsync_assassin)
                     {
-                        Untucked.createBold(bottomQueens[rdmbtmqueen].getName()+" says they really felt like they dissapointed the judges.");
+                        Untucked.createBold(bottomQueens[rdmbtmqueen].getName()+" say that they really felt like they dissapointed the judges.");
                     }
                     else
                     {
-                            Untucked.createBold(bottomQueens[rdmbtmqueen].getName()+" says that they're afraid they might have to lipsync tonight.");
+                            Untucked.createBold(bottomQueens[rdmbtmqueen].getName()+" say that they might be afraid that they will have to lipsync tonight.");
                     }
                 }
                 break;
@@ -8091,16 +8090,16 @@ function GenerateUntuckedEvent(Queens, Untucked)
                     {
                         Untucked.createImage(topQueens[rdmtopqueen].image);
                     }
-                    Untucked.createBold(currentCast[rdmsafequeen].getName()+" asks "+bottomQueens[rdmbtmqueen].getName()+" what they thought about their critiques.");
+                    Untucked.createBold(currentCast[rdmsafequeen].getName()+" ask "+bottomQueens[rdmbtmqueen].getName()+" what they thought about their critiques.");
                     if(randomNumber(0,1)==0)
                     {
 
-                            Untucked.createBold(bottomQueens[rdmbtmqueen].getName()+" responds that they thought their critiques were completely false.");
+                            Untucked.createBold(bottomQueens[rdmbtmqueen].getName()+" respond that they thought their critiques were completely false.");
                             if(response==1)
                             {
                                 if(randomNumber(0,1)==1)
                                 {
-                                    Untucked.createBold(topQueens[rdmtopqueen].getName()+" says that "+bottomQueens[rdmbtmqueen].getName()+" is completely out of touch with reality.");
+                                    Untucked.createBold(topQueens[rdmtopqueen].getName()+" say that "+bottomQueens[rdmbtmqueen].getName()+" is completely out of touch with reality.");
                                     currentCast[currentCast.indexOf(topQueens[rdmtopqueen])].ChangeRelation(bottomQueens[rdmbtmqueen],-1);
                                     currentCast[currentCast.indexOf(bottomQueens[rdmbtmqueen])].ChangeRelation(topQueens[rdmtopqueen],-1);
                                 }
@@ -8176,7 +8175,7 @@ function UntuckedSafeQueens()
 
     if(SafeQueens.length==1)
     {
-        Untucked.createBold(SafeQueens[0].getName()+" grabs a drink and sits down while waiting for the other queens.");
+        Untucked.createBold(SafeQueens[0].getName()+" grab a drink and sits down while waiting for the other queens.");
     }
     else
     {
@@ -8450,18 +8449,17 @@ function GetCritiques()
 {
     let actingc =[
         ', the acting was just not good, it felt really stiff.',
-        ', you had such a good start, but then you faded into the background...',
+        ', you had such a good start, but then you faded into the background which was not good...',
         ', each time you came onto the screen, you looked more lost than the last time.',
-        ', I feel like you were lacking confidence, which is so not like you.',
-        ', I feel like you wanted to stand out so much, that you stood out for the wrong reasons.',
-        ', you could have taken this so much further, it was quite dissapointing.',
+        ', I feel like you were lacking confidence, and it showed.',
+        ', I feel like you wanted to stand out so much, you stood out for the wrong reasons.',
+        ', you could probably went down the road of so bad, it\'s you really missed that opportunity.',
         ', I felt like you struggled a lot with the acting, and it showed on the final product.'
-		', I expected more from you tonight, this wasn\'t your best work.',
     ];
 
     let standupc =[
         ', your stand up was very stiff. You looked very uneased.',
-        ', I saw how nervous you were, and you never got out of it. Get out of your head now, before it fucks you up.',
+        ', I saw how nervous you were, and you never got of it. Get out of your head now, before it fucks you up.',
         ', your jokes just were not landing and you kept repeating yourself. It was not good.',
         ', you took a long time to get to the first joke, for it to be not funny.',
         ', you started off strong, but you were getting worse as time went on. For it to be successfull you need to start and end with a bang.'
@@ -8724,12 +8722,12 @@ function Critiques()
         let randomreason = [
             ", because I feel like they dropped the ball on the challenge.",
             ", because I feel like they were the weakest in this challenge.",
-            ", They just did not do well in this challenge. It was a mess.",
+            ", I just feel like they haven't done in this challenge.",
             ", because their critiques were the worst tonight.",
-            ", but I know that the person we saw today in the challenge, wasn't them.",
+            ", and I know that the person we saw today in the challenge, wasn't them.",
             ", because they just didn't perform to the maximum of their ability",
             ", they were just bad, no shade to them.",
-            ", It's just that tonight they didn't rise to the occassion."
+            ", It's just that tonight they haven't been up to rise to the occasion."
         ];
 
         MS.createHorizontalLine();
