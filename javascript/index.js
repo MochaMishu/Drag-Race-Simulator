@@ -28,9 +28,43 @@ let readsbase=[
 ];
 
 let entrancelinesreg = [
-    "this is a test"
-    "this is also a test"
-    "big test here"
+    "Y'all better fear, because I am here.",
+    "Just to let y'all known, the winner has arrived.",
+    "Well hello there!",
+    "Now this is what dreams are made off!",
+    "They talked about an entrance line, but i don't see any mark on the floor. Oh well!",
+    "I am here, now y'all close your mouth from all that gagging!",
+    "Finally, i can stop auditionning now!",
+    "Oh this y'all, it's just the entrance look.",
+    "Where am i ?",
+    "Time to fight for that crown!",
+    "I came here to fight!",
+    "I didn't come to play, i came to slay.",
+    "Watch out girls, I arrived.",
+    "The doll is finally out of her box!",
+    "It's time, to go home girls.",
+    "I'm here.",
+    "Finally, a place where i can say : I love it here!",
+    "Did somebody order a hooker ?",
+    "Mom, said i could win this, so i'm here.",
+    "Don't worry, it's just me!",
+    "I was a model before the accident.",
+    "Now, i auditionned for pit crew. But this is gonna be way more fun!",
+    "A wise person once said : \"I'm about to crash.\"",
+    "I fought thoses monsters for years in hollywood, and now I will fight them here.",
+    "OMG! #Imhere.",
+    "This is about to y'all girls last dance.",
+    "Wooh, my God! Look at this! Wow, crazy, crazy, crazy!",
+    "Welcome to my party! I brought cookies!",
+    "Hey girls hey! What’s going on pussycats?",
+    "Oh boys, the diva has arrived!",
+    "Well well well, I hope you bitches are ready.",
+    "Is this America’s Next Top Model? Oh, sorry… just kidding!",
+    "What’s up nerds?",
+    "Alright ladies, let’s turn up the juice and see what shakes loose!",
+    "So this is what it looks like.",
+    "The world wants me, and the feeling is mutual.",
+    "Don’t let the smooth taste fool ya, baby!"
 ];
 let entrancelinesas = [
     "I'm back.",
