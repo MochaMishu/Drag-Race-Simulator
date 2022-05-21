@@ -46,14 +46,14 @@ let entrancelinesreg = [
     "I'm here.",
     "Finally, a place where i can say : I love it here!",
     "Did somebody order a hooker ?",
-    "Mom said i could win this, so i'm here.",
+    "Mom, said i could win this, so i'm here.",
     "Don't worry, it's just me!",
     "I was a model before the accident.",
-    "Now, i auditionned for the pit crew. But this is gonna be way more fun!",
+    "Now, i auditionned for pit crew. But this is gonna be way more fun!",
     "A wise person once said : \"I'm about to crash.\"",
     "I fought thoses monsters for years in hollywood, and now I will fight them here.",
     "OMG! #Imhere.",
-    "This is about to be y'alls last dance.",
+    "This is about to y'all girls last dance.",
     "Wooh, my God! Look at this! Wow, crazy, crazy, crazy!",
     "Welcome to my party! I brought cookies!",
     "Hey girls hey! What’s going on pussycats?",
@@ -68,7 +68,7 @@ let entrancelinesreg = [
 ];
 let entrancelinesas = [
     "I'm back.",
-    "Y'all really thought you could have an all stars without me?!",
+    "Y'all really thought, this was an all-star without me!",
     "Ow! Like that!",
     "Yesss mami! La perra’s in the house!",
     "Hello, hello, what’s up?",
@@ -79,12 +79,11 @@ let entrancelinesas = [
     "Round 2 bitches!",
     "Fan favourite is here!",
     "Yesss, the body is back!",
-    "So y’all thought I’d never get here? Sorry, I was stuck in traffique.",
+    "So y’all thought I’d never get here? Sorry, I was stuck in traffic.",
     "I didn’t come to crash the party, I came to end it!",
     "You know they done fucked up, right?",
     "Well looks like it wasn't my last dance after all!",
-    "Im back, this time with more cash.",
-	"Another one, thank you.",
+    "The same, this time with more cash."
 ];
 
 let entrancelineres = [
@@ -94,9 +93,7 @@ let entrancelineres = [
     "WERK!",
     "Facecrack of the century...",
     "Oh wow.",
-    "Oh.",
-	"You better werk!",
-	"interesting.",
+    "Oh."
 ];
 
 class Event{
@@ -8244,113 +8241,103 @@ function UntuckedSafeQueens()
 function GetCompliment()
 {
     let actingc =[
-		', you were on top of your game this week and it showed in the challenge, your acting was one of the best of the night. ',
-		', everything felt so natural, you were a standout tonight.',
         ', the acting was so naturally funny! It was really good.',
         ', you have such good physical comedy. You were a joy to watch!',
-        ', each time you came on screen, you stole the show.',
+        ', each time you came onto the screen, you stole the show.',
         ', I loved seeing you on screen. It was so good each time.',
-        ', I feel like you found the perfect balance between comedy and seriousness. It was great.',
+        ', I feel like you found the perfect balance between comedy and seriousness. It was great.'
     ];
 
     let standupc =[
-		', you should be very proud of your performance tonight, the other queens should be worried. ',
-		', you came out here tonight and stole the show, incredible job tonight. ',
         ', your stand up was very natural. Good job, this week.',
-        ', I saw how nervous you were at first, but you completely knocked it out of the park once you got into it. Great performance.',
+        ', I saw how nervous you were, but you completely knocked it out of the park once you got in. Great performance.',
         ', this is how you do stand up. It felt very natural and funny, I loved every second of it.',
         ', you were funny from begginning to end. You had a really good flow. Good job.',
-        ', I was so entertained the entire time, Great job.',
+        ', I cannot say how much I was entertained, it was really good.'
     ];
 
     let roastc =[
-        ', your roast was very funny, and you felt natural up there. Good job this week.',
+        ', your roast was very funny, and you felt natural up there. Good job, this week.',
         ', we asked you for a roast, and damn you brought the flamethrower. Great performance.',
         ', this is how you do a roast. You needed to find that fine line, and you did. Really good job tonight.',
         ', you were funny from begginning to end. You had a really good flow. Good job.',
-        ', I was so entertained by your roast, it was really punch after punch after punch. You should be proud of yourself.',
-		', you are so shady... and i LOVED it! Tonight was clearly your night.',
+        ', I cannot say how much I was entertained by your roast, it was really punch after punch after punch. You should be proud of yourself.'
     ];
 
     let commercialc =[
-        ', you nailed it on the branding, this was very you. It was really good.',
-        ', you did exactly what we needed of you, it was coherent, funny, .... Outstanding job tonight!',
+        ', you branded yourself all over, it was really good.',
+        ', you did exactly what we needed of you, it was coherent, funny, ... . Outstanding job tonight!',
         ', your commercial was very you. It was really great, I loved it!',
-        ', this challenge was totally up your alley, it had EVERYTHING! Great job, this week',
-		', you made me want to buy what your selling, and thats what we were looking for tonight.',
+        ', this challenge was totally up your alley, it had EVERYTHING! Great job, this week'
     ];
     let marketingc = [
-        ', tonight, girl are you a hidden marketer ? It was so GOOD!',
+        ', tonight, girl are you hidden marketer ? It was so GOOD!',
         ', you had ups and down and presented well. All the elements were there to make it really good.',
         ', you had probably the best ad, it was funny and serious at the time!',
-        ', the design of your ad was simply amazing. Good job tonight.',
+        ', the design of your ad was simply amazing. Good job tonight.'
     ];
     let dancec = [
         ', you made it look very easy, and you looked at ease. Good job!',
-        ', you nailed every single aspect of it and you looked gorgeous while doing it, congrats!',
-        ', you had hard choreography tonight, and you knocked it out of the park!',
+        ', you nailed everything single aspect of it and you looked gorgeous congrats!',
+        ', you had something hard to do and you knocked it out of the park!',
         ', each time you came on stage, I was like omg what are they going to do ? You killed it!',
         ', you had such an ease to do this! It was really great to watch!'
-		', I can tell you are a dancer, because tonight you killed it.',
     ];
     let makeoverc = [
-        ', you completely nailed this, you and your partner look great.',
-        ', you branded this successfully! If I saw your partner alone, I would instantly know this was your work.',
-        ', you look so beautiful tonight and your partner does too! We really see the family resemblance.',
-        ', this look is very you! It\'s beautiful, and your parent looks incredible.',
+        ', you completely nailed this, you and your partner looks great.',
+        ', you branded this successfully! If I saw your partner alone, I would have knowned it was yours.',
+        ', you look so beautiful tonight and your partner does too! We really see family resemblance.',
+        ', this look is very you! It\'s beautiful, and so does your partner.'
     ];
     let runwayc = [
         ', your looks were very good. I loved them all.',
         ', can you give me your wardrobe ? They were all so good!',
-        ', did you sew all of these yourself? If so you are a really good sewer. Congrats!',
-        ', you literally ate up all of your looks. Great job tonight.',
-		', you took my breath away every time you were out on this runway tonight.',
+        ', did you sew all of theses yourself, if so you are a really good sewer. Congrats!',
+        ', you literally ate up all of your looks. Great job tonight.'
     ];
 
     let designc =[
-        ', this outfit is beautiful, I love every detail of it. Good job, this week.',
+        ', this outfit is beautiful, I love every details of it. Good job, this week.',
         ', You look majestic tonight. I love how you worked the fabric, it looks so great! Congrats.',
         ', sometimes simple is bad, but here simple is smart. You made a simple dress but the attention to details is immaculate. You did really good tonight.',
-        ', this is so good. I love it! Can you make me one? No, but for real this outfit is FIRE! I loved it.',
-        ', are you a sewer? Because if not you should become one. It is simply gorgeous from concept to realization.',
+        ', this is so good. I love it! Can you make some for me ? No, but for real this outfit is FIRE! I loved it.',
+        ', are you a sewer ? Because if not you should become one. It is simply gorgeours from concept to realization.',
         ', this outfit is very well made. It is really good.',
-        ', this challenge was up your alley, and you made lemonade out of lemons. This look is great, from the styling of everything down to the jewelry, just perfect.',
-		', You look like a goddess tonight, and thats high praise coming from me.',
+        ', this challenge was up your alley, and you made lemonade out of lemons. This look is great, from the styling of everything down to the jewelry, just perfect.'
     ];
 
     let improvc = [
         ', you looked really at ease , and you played it smart!',
         ', you were really funny! And you knew how to bounce back from other people!',
         ', you are really good at improv, I can tell you it was so GOOD!',
-        ', I loved your performance, you were really great!',
-		', The entire performance was smooth from beginning to end, you didn\'t stumble once. Great job tonight.',
+        ', I loved your performance, you were really great!'
     ];
     let snatchgamec = [
         ', your character was brilliant you were incredibly funny.',
         ', each time it felt you got boring you bounced back up!',
         ', you picked a very good character, it was really funny from beginning to end.',
         ', you played this really smart, each time you had a chance to be in the spot light, you took it. Great job.',
-        ', you really knew how to bounce back from others people, and it really made you shine.',
+        ', you really knew how to bounce back from others people, and it really made you shine.'
     ];
     let rusicalc = [
         ', you took a role and made it your own, you WERE the character!',
         ', you were a joy to watch, you did so good!',
         ', I loved each time you were on the stage, you had that caracterization spot on!',
-        ', you may not have had the best role, but GIRL! You turned it out.',
+        ', you may not have had the best role, but GIRL! You turned it out.'
     ];
 
     let ballc = [
         ', all of yours looks were very well made. Congrats!',
         ', you had such an ease at sewing it was incredible!',
         ', all of yours looks were perfect, from concept to realization, I can tell you\'re not here to play games!',
-        ', your third look may not have been the best, but GIRL you sold like it was a versace dress. Congrats.',
+        ', your third look may not have been the best, but GIRL you sold like it was a versace dress. Congrats.'
     ];
 
     let rumixc = [
         ', your lyrics were great and so was your look. Good job tonight.',
         ', I had so much watching you perform, you were great.',
         ', damn you left the others no chance! You were such a stand-out.',
-        ', you looked you had fun, and it made us enjoy you even more!',
+        ', you looked you had fun, and it made us enjoy you even more!'
     ];
     let girlgroupc = [
         ', your lyrics were great and so was your look. Good job tonight.',
@@ -8359,7 +8346,7 @@ function GetCompliment()
         ', you looked you had fun, and it made us enjoy you even more!',
         ', you were the stand-out of your group!',
         ', you were a very cohesive group. Good job!',
-        ', you had so much fun! It really took us into your world.',
+        ', you had so much fun! It really took us into your world.'
     ];
 
     let talentc =[
@@ -8371,7 +8358,7 @@ function GetCompliment()
         ', we can tell, you prepared. This was really great.',
         ', you made something that we didn\'t expect a talent. And it worked! You were fabulous.',
         ', you showed up and you showed out. It was original and well executed! Good job.',
-        ', you had a really great show! It looked seamless, I can\'t even find one critique!',
+        ', you had a really great show! It looked seamless, I can\'t even find one critique!'
     ];
 
     switch(episodeChallenges[episodeChallenges.length-1])
