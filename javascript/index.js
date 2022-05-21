@@ -28,7 +28,6 @@ let readsbase=[
 ];
 
 let entrancelinesreg = [
-	"Testing Entrance Line.",
     "Y'all better fear, because I am here.",
     "Just to let y'all known, the winner has arrived.",
     "Well hello there!",
@@ -47,14 +46,14 @@ let entrancelinesreg = [
     "I'm here.",
     "Finally, a place where i can say : I love it here!",
     "Did somebody order a hooker ?",
-    "Mom, said i could win this, so i'm here.",
+    "Mom said i could win this, so i'm here.",
     "Don't worry, it's just me!",
     "I was a model before the accident.",
-    "Now, i auditionned for pit crew. But this is gonna be way more fun!",
+    "Now, i auditionned for the pit crew. But this is gonna be way more fun!",
     "A wise person once said : \"I'm about to crash.\"",
     "I fought thoses monsters for years in hollywood, and now I will fight them here.",
     "OMG! #Imhere.",
-    "This is about to y'all girls last dance.",
+    "This is about to be y'alls last dance.",
     "Wooh, my God! Look at this! Wow, crazy, crazy, crazy!",
     "Welcome to my party! I brought cookies!",
     "Hey girls hey! What’s going on pussycats?",
@@ -69,7 +68,7 @@ let entrancelinesreg = [
 ];
 let entrancelinesas = [
     "I'm back.",
-    "Y'all really thought, this was an all-star without me!",
+    "Y'all really thought you could have an all stars without me?!",
     "Ow! Like that!",
     "Yesss mami! La perra’s in the house!",
     "Hello, hello, what’s up?",
@@ -80,11 +79,12 @@ let entrancelinesas = [
     "Round 2 bitches!",
     "Fan favourite is here!",
     "Yesss, the body is back!",
-    "So y’all thought I’d never get here? Sorry, I was stuck in traffic.",
+    "So y’all thought I’d never get here? Sorry, I was stuck in traffique.",
     "I didn’t come to crash the party, I came to end it!",
     "You know they done fucked up, right?",
     "Well looks like it wasn't my last dance after all!",
-    "The same, this time with more cash."
+    "Im back, this time with more cash.",
+	"Another one, thank you.",
 ];
 
 let entrancelineres = [
@@ -94,7 +94,9 @@ let entrancelineres = [
     "WERK!",
     "Facecrack of the century...",
     "Oh wow.",
-    "Oh."
+    "Oh.",
+	"You better werk!",
+	"interesting.",
 ];
 
 class Event{
