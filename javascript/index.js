@@ -8322,7 +8322,7 @@ function GetCompliment()
         ', you looked really at ease , and you played it smart!',
         ', you were really funny! And you knew how to bounce back from other people!',
         ', you are really good at improv, I can tell you it was so GOOD!',
-        ', I loved your performance, you were really great!'\
+        ', I loved your performance, you were really great!',
 		', The entire performance was smooth from beginning to end, you didn\'t stumble once. Great job tonight.',
     ];
     let snatchgamec = [
