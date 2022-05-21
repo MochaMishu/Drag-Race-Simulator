@@ -89,7 +89,7 @@ let entrancelineres = [
     "Well there's room for everybody!",
     "Ok...",
     "WERK!",
-    "Facecrack of the century...",
+    "Facecrack...",
     "Oh wow.",
     "Oh."
 ];
