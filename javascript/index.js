@@ -8729,7 +8729,7 @@ function Critiques()
             ", but I know that the person we saw today in the challenge, wasn't them.",
             ", because they just didn't perform to the maximum of their ability",
             ", they were just bad, no shade to them.",
-            ", It's just that tonight they didn't rise to the occasion."
+            ", It's just that tonight they didn't rise to the occassion."
         ];
 
         MS.createHorizontalLine();
@@ -8900,7 +8900,7 @@ function ASUntucked()
                                 Untucked.createBold(bottomQueens[j].getName()+" propose to "+top2[0].getName()+" the idea of an alliance.");
                                 if(randomNumber(0,5)>3 && fally == false)
                                 {
-                                    Untucked.createBold(top2[0].getName()+" accepts the proposition of "+bottomQueens[j].getName()+" to make an alliance.");
+                                    Untucked.createBold(top2[0].getName()+" accept the proposition of "+bottomQueens[j].getName()+" to make an alliance.");
                                     top1choice.splice(top1choice.indexOf(bottomQueens[j]),1);
                                     currentCast[currentCast.indexOf(top2[0])].AddAlliance(bottomQueens[j]);
                                     currentCast[currentCast.indexOf(bottomQueens[j])].AddAlliance(top2[0]);
