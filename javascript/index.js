@@ -92,6 +92,7 @@ let entrancelineres = [
     "Facecrack...",
     "Oh wow.",
     "Oh."
+    "iconic.",
 ];
 
 class Event{
