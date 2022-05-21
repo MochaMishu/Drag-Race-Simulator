@@ -5,7 +5,7 @@ let setlssong = [];
 
 let readsbase=[
     ", how nice of you to save the oceans by injecting the plastic into yourself! And using the rest of the trash for your drag.",
-    ", look at how short is this skirt! It is supposed to be the same size as your talent ?",
+    ", look how short this skirt is! Is it supposed to be the same size as your talent?",
     ", these other girls are gonna say you have terrible makeup skills, you have no fashion sense, and you’re dumb as a rock. But they’re wrong! You don’t have terrible makeup skills.",
     ", if you are America’s sweetheart then America needs a heart transplant.",
     ", next time you death drop reverse that and drop dead.",
@@ -23,7 +23,7 @@ let readsbase=[
     ", they say you have mug for days, but with shoulders like that you need to be thug for days.",
     ", welcome! That's really great because we needed a janitor around here.",
     ", at least you have the pretty package! Actually not even that.",
-    ", you're kind of like Azealia banks, everyone knows you, but few people actually likes you.",
+    ", you're kind of like Azealia banks, everyone knows you, but few people actually like you.",
     ", like Rihanna said : Shut up and drive! But please only do the first part, we don't want any accident."
 ];
 
