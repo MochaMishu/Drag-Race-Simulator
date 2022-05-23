@@ -28,7 +28,6 @@ let readsbase=[
 ];
 
 let entrancelinesreg = [
-    "I'M HEREEEE!",
     "Y'all better fear, because I am here.",
     "Just to let y'all known, the winner has arrived.",
     "Well hello there!",
@@ -68,8 +67,8 @@ let entrancelinesreg = [
     "Don’t let the smooth taste fool ya, baby!"
 ];
 let entrancelinesas = [
-    "I'm back.",
-    "Y'all really thought, this was an all-star without me!",
+    "I'm back!",
+    "Y'all really thought you could have an all stars without me!",
     "Ow! Like that!",
     "Yesss mami! La perra’s in the house!",
     "Hello, hello, what’s up?",
@@ -80,7 +79,7 @@ let entrancelinesas = [
     "Round 2 bitches!",
     "Fan favourite is here!",
     "Yesss, the body is back!",
-    "So y’all thought I’d never get here? Sorry, I was stuck in traffic.",
+    "So y’all thought I’d never get here? Sorry, I was stuck in traffique.",
     "I didn’t come to crash the party, I came to end it!",
     "You know they done fucked up, right?",
     "Well looks like it wasn't my last dance after all!",
@@ -92,9 +91,11 @@ let entrancelineres = [
     "Well there's room for everybody!",
     "Ok...",
     "WERK!",
-    "Facecrack of the century...",
+    "Facecrack...",
     "Oh wow.",
     "Oh."
+    "Another one, thank you.",
+    "Iconic!",
 ];
 
 class Event{
