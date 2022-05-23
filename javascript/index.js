@@ -6281,7 +6281,7 @@ function lipSyncResult(malus1,maluUs2)
             }
         }
     } else {
-        if (score1 > 7 && score2 > 7 && randomNumber(0, 100) <= 50 && !doubleShantay && noDouble == false && currentCast.length > 5) {
+        if (score1 > 7 && score2 > 7 && randomNumber(50, 50) <= 50 && !doubleShantay && noDouble == false && currentCast.length > 5) {
             if (randomNumber(0, 100) >= 95) {
                 screen.createImage(bottomQueens[0].image, "tomato");
                 screen.createBold(bottomQueens[0].getName() + ", shantay you stay.");
