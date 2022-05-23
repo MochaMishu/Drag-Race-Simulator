@@ -4019,10 +4019,6 @@ function generateSpace() {
     totalCastSize = castSize;
     let castSelection = document.querySelector("p#castSelection");
     castSelection.innerHTML = '';
-    if (totalCastSize < 3)
-        window.alert("Please, use at least 3 queens on your cast!");
-    else if (totalCastSize > 20)
-        window.alert("Please, use less than 20 queens in your cast!");
     else
         for (let i = 0; i < castSize; i++) {
             let select = document.createElement("select");
