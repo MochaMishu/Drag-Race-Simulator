@@ -564,6 +564,7 @@ class ActingChallenge {
             desc1[desc1["commercial about "] = 2] = "commercial about ";
             desc1[desc1["60's inspired film about "] = 3] = "60's inspired film about ";
             desc1[desc1["80's inspired film about "] = 4] = "80's inspired film about ";
+            desc1[desc1["2000's inspired film about "] = 5] = "2000's inspired film about ";
         })(desc1 || (desc1 = {}));
         let desc2;
         (function (desc2) {
@@ -574,9 +575,9 @@ class ActingChallenge {
             desc2[desc2["gayness."] = 4] = "gayness.";
             desc2[desc2["celebrities."] = 5] = "celebrities.";
             desc2[desc2["the future."] = 6] = "the future.";
-            desc2[desc2["the rainbow."] = 7] = "the rainbow.";
+            desc2[desc2["Reality TV."] = 7] = "Reality TV.";
         })(desc2 || (desc2 = {}));
-        description.innerHTML = "The queens will act in a " + desc1[randomNumber(0, 4)] + desc2[randomNumber(0, 6)];
+        description.innerHTML = "The queens will act in a " + desc1[randomNumber(0, 5)] + desc2[randomNumber(0, 7)];
     }
     rankPerformances() {
         for (let i = 0; i < currentCast.length; i++) {
