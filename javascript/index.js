@@ -87,6 +87,8 @@ let entrancelinesas = [
 ];
 
 let entrancelineres = [
+    "Another one, thank you.",
+    "Iconic!",
     "OMG!",
     "Well there's room for everybody!",
     "Ok...",
@@ -94,8 +96,6 @@ let entrancelineres = [
     "Facecrack...",
     "Oh wow.",
     "Oh."
-    "Another one, thank you.",
-    "Iconic!",
 ];
 
 class Event{
