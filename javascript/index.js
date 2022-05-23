@@ -5,7 +5,7 @@ let setlssong = [];
 
 let readsbase=[
     ", how nice of you to save the oceans by injecting the plastic into yourself! And using the rest of the trash for your drag.",
-    ", look how short this skirt is! Is it supposed to be the same size as your talent?",
+    ", look at how short is this skirt! It is supposed to be the same size as your talent ?",
     ", these other girls are gonna say you have terrible makeup skills, you have no fashion sense, and you’re dumb as a rock. But they’re wrong! You don’t have terrible makeup skills.",
     ", if you are America’s sweetheart then America needs a heart transplant.",
     ", next time you death drop reverse that and drop dead.",
@@ -23,17 +23,18 @@ let readsbase=[
     ", they say you have mug for days, but with shoulders like that you need to be thug for days.",
     ", welcome! That's really great because we needed a janitor around here.",
     ", at least you have the pretty package! Actually not even that.",
-    ", you're kind of like Azealia banks, everyone knows you, but few people actually like you.",
+    ", you're kind of like Azealia banks, everyone knows you, but few people actually likes you.",
     ", like Rihanna said : Shut up and drive! But please only do the first part, we don't want any accident."
 ];
 
 let entrancelinesreg = [
+    "Y'all better fear, because I am here.",
     "Just to let y'all known, the winner has arrived.",
     "Well hello there!",
-    "Now this is what dreams are made of!",
+    "Now this is what dreams are made off!",
     "They talked about an entrance line, but i don't see any mark on the floor. Oh well!",
     "I am here, now y'all close your mouth from all that gagging!",
-    "Finally, i can stop auditioning now!",
+    "Finally, i can stop auditionning now!",
     "Oh this y'all, it's just the entrance look.",
     "Where am i ?",
     "Time to fight for that crown!",
@@ -43,16 +44,17 @@ let entrancelinesreg = [
     "The doll is finally out of her box!",
     "It's time, to go home girls.",
     "I'm here.",
-    "Finally, a place where i can say: I love it here!",
+    "Finally, a place where i can say : I love it here!",
     "Did somebody order a hooker ?",
-    "Mom said i could win this, so i'm here.",
+    "Mom, said i could win this, so i'm here.",
     "Don't worry, it's just me!",
     "I was a model before the accident.",
-    "Now, i auditioned for the pit crew. But this is gonna be way more fun!",
-    "I fought those monsters for years in hollywood, and now I will fight them here.",
+    "Now, i auditionned for pit crew. But this is gonna be way more fun!",
+    "A wise person once said : \"I'm about to crash.\"",
+    "I fought thoses monsters for years in hollywood, and now I will fight them here.",
     "OMG! #Imhere.",
-    "This is about to be y'all girls last dance.",
-    "Woah, my God! Look at this! Wow, crazy, crazy, crazy!",
+    "This is about to y'all girls last dance.",
+    "Wooh, my God! Look at this! Wow, crazy, crazy, crazy!",
     "Welcome to my party! I brought cookies!",
     "Hey girls hey! What’s going on pussycats?",
     "Oh boys, the diva has arrived!",
@@ -66,7 +68,7 @@ let entrancelinesreg = [
 ];
 let entrancelinesas = [
     "I'm back.",
-    "Y'all really thought you could have an all star season without me?",
+    "Y'all really thought, this was an all-star without me!",
     "Ow! Like that!",
     "Yesss mami! La perra’s in the house!",
     "Hello, hello, what’s up?",
@@ -75,13 +77,13 @@ let entrancelinesas = [
     "Wake up, wake up, wake up, this ain’t no dream. I’m back!",
     "Ayo sis! I have some unfinished business!",
     "Round 2 bitches!",
-    "Fan favorite is here!",
+    "Fan favourite is here!",
     "Yesss, the body is back!",
-    "So y’all thought I’d never get here? Sorry, I was stuck in traffique.",
+    "So y’all thought I’d never get here? Sorry, I was stuck in traffic.",
     "I didn’t come to crash the party, I came to end it!",
     "You know they done fucked up, right?",
     "Well looks like it wasn't my last dance after all!",
-    "I'm exactly the same, but this time with more cash."
+    "The same, this time with more cash."
 ];
 
 let entrancelineres = [
@@ -89,11 +91,9 @@ let entrancelineres = [
     "Well there's room for everybody!",
     "Ok...",
     "WERK!",
-    "Facecrack...",
+    "Facecrack of the century...",
     "Oh wow.",
     "Oh."
-    "iconic.",
-    "Another one, thank you.",
 ];
 
 class Event{
