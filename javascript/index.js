@@ -6281,7 +6281,7 @@ function lipSyncResult(malus1,maluUs2)
             }
         }
     } else {
-        if (score1 > 7 && score2 > 7 && randomNumber(0, 50) <= 50 && !doubleShantay && noDouble == false && currentCast.length > 5) {
+        if (score1 > 7 && score2 > 7 && randomNumber(0, 100) <= 50 && !doubleShantay && noDouble == false && currentCast.length > 5) {
             if (randomNumber(0, 100) >= 95) {
                 screen.createImage(bottomQueens[0].image, "tomato");
                 screen.createBold(bottomQueens[0].getName() + ", shantay you stay.");
@@ -6308,7 +6308,7 @@ function lipSyncResult(malus1,maluUs2)
                 doubleShantay = true;
             }
         }
-        else if (score1 < 4 && score2 < 4 && randomNumber(1, 10) <= 10 && !doubleSashay && currentCast.length > 5 && noDouble == false) {
+        else if (score1 < 4 && score2 < 4 && randomNumber(0, 10) <= 10 && !doubleSashay && currentCast.length > 5 && noDouble == false) {
             screen.createImage(bottomQueens[0].image, "darkred");
             screen.createImage(bottomQueens[1].image, "darkred");
             if (chocolateBarTwist  && !chocolateBarTwistCheck) {
@@ -6376,7 +6376,7 @@ function lipSyncResult(malus1,maluUs2)
                 currentCast.splice(currentCast.indexOf(bottomQueens[1]), 1);
             }
         }
-        else if (randomNumber(0, 9) >= 9 && disqOrDept == false) {
+        else if (randomNumber(0, 1000) >= 998 && disqOrDept == false) {
             let quitterQueen = bottomQueens[randomNumber(0, bottomQueens.length - 1)];
             screen.createImage(quitterQueen.image, "red");
             screen.createBold(quitterQueen.getName() + ", shockingly has left the runway, they decided that they won't lipsync.");
@@ -6404,7 +6404,7 @@ function lipSyncResult(malus1,maluUs2)
                 }
             }
         }
-        else if (randomNumber(0, 10) >= 9 && disqOrDept == false) {
+        else if (randomNumber(0, 1000) >= 999 && disqOrDept == false) {
             let disqualifiedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
             screen.createImage(disqualifiedQueen.image, "red");
             screen.createBold(disqualifiedQueen.getName() + ", it has come to my attention that you have broken the rules of this competition. I must ask you to sashay away.");
@@ -6432,7 +6432,7 @@ function lipSyncResult(malus1,maluUs2)
                 }
             }
         }
-        else if (randomNumber(0, 5) >= 5 && disqOrDept == false) {
+        else if (randomNumber(0, 1000) >= 999 && disqOrDept == false) {
             let injuredQueen = currentCast[randomNumber(0, currentCast.length - 1)];
             screen.createImage(injuredQueen.image, "red");
             screen.createBold(injuredQueen.getName() + ", would you please step forward.");
