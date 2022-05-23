@@ -6308,7 +6308,7 @@ function lipSyncResult(malus1,maluUs2)
                 doubleShantay = true;
             }
         }
-        else if (score1 < 4 && score2 < 4 && randomNumber(0, 10) <= 10 && !doubleSashay && currentCast.length > 5 && noDouble == false) {
+        else if (score1 < 4 && score2 < 4 && randomNumber(10, 10) <= 10 && !doubleSashay && currentCast.length > 5 && noDouble == false) {
             screen.createImage(bottomQueens[0].image, "darkred");
             screen.createImage(bottomQueens[1].image, "darkred");
             if (chocolateBarTwist  && !chocolateBarTwistCheck) {
