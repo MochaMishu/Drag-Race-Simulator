@@ -5125,7 +5125,7 @@ function winAndBtm6() {
         topQueens.splice(0, 1);
     }
     //double win:
-    else if (topQueens[0].performanceScore == topQueens[1].performanceScore && randomNumber(0, 100) < 60) {
+    else if (topQueens[0].performanceScore == topQueens[1].performanceScore && randomNumber(1, 1) < 1) {
         topQueens[0].addToTrackRecord(" WIN");
         topQueens[0].favoritism += 5;
         topQueens[0].ppe += 5;
@@ -5192,7 +5192,7 @@ function bottom6() {
         bottomQueens[i].unfavoritism += 3;
         bottomQueens[i].ppe += 1;
     }
-    if (score1 < 4 && score2 < 4 && randomNumber(0, 100) <= 10 && !doubleSashay && currentCast.length > 5 && noDouble == false) {
+    if (score1 < 4 && score2 < 4 && randomNumber(1, 1) <= 1 && !doubleSashay && currentCast.length > 5 && noDouble == false) {
         screen.createImage(bottomQueens[4].image, "darkred");
         screen.createImage(bottomQueens[5].image, "darkred");
         if (chocolateBarTwist  && !chocolateBarTwistCheck) {
@@ -5586,7 +5586,7 @@ function winAndBtm2() {
             topQueens.splice(0, 1);
         }
     }//double win:
-    else if (topQueens[0].performanceScore == topQueens[1].performanceScore && randomNumber(0, 100) < 60) {
+    else if (topQueens[0].performanceScore == topQueens[1].performanceScore && randomNumber(1, 1) < 1) {
         topQueens[0].addToTrackRecord(" WIN");
         topQueens[0].favoritism += 5;
         topQueens[0].ppe += 5;
