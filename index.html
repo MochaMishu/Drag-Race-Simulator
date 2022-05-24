@@ -9,12 +9,12 @@
 </head>
 <body>
     <h1 id="MainTitle">Drag Race Simulator!</h1>
-    
+
     <div id="MainBlock">
         <p><big>This is you chance to simulate a drag race season with all your favorite contestants!</big></p>
         <div>
             <p>How many queens do you want on your cast?</p>
-            <input type="number" min="3" max="20" id="castSize">
+            <input type="number" min="3" max="30" id="castSize">
             <button onclick="generateSpace()">Select</button>
         </div>
         <p id="castSelection"></p>
@@ -45,7 +45,7 @@
                 <option value="lalaparuza">LaLaPaRuZa</option>
             </select>
         </div>
-            
+
         <div>
             <p>Choose your format: </p>
             <select id="format">
@@ -67,7 +67,7 @@
             <input type="checkbox" id="chocolateBarChoosable"> Choosable
         </div>
         <div><button onclick="startSimulation()">Simulate now!</button></div>
-    
+
         <input type="checkbox" id="disableDouble">Disable double shantays and sashays
         <input type="checkbox" id="onlyCustomQueens"> Show Only Custom Queens
         <input type="checkbox" id="HideLipstickesChoices"> Hide lipstick choices
