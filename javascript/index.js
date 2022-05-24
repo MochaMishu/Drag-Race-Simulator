@@ -9437,7 +9437,7 @@ let violet = new Queen("Violet Chachki", 6, 7, 8, 15, 8, 13, 8, "Violet",false, 
 let us_season7 = [ginger, jaidynn, jasmine, kandy, katya, kennedy, max, fame, kasha, pearl, sashab, tempest, trixie, violet];
 //SEASON 8:  acting, comedy, dance, design, improv, runway, lipsync
 let acid = new Queen("Acid Betty", 9, 4, 7, 10, 5, 11, 7, "Acid",false, "US8");
-let bob = new Queen("Bob The Drag Queen", 15, 15, 8, 9, 15, 8, 12, "Bob",false, "US8");
+let bob = new Queen("Bob The Drag Queen", 15, 15, 10, 9, 15, 12, 14, "Bob",false, "US8");
 let chichi = new Queen("Chi Chi DeVayne", 8, 4, 13, 8, 6, 8, 13, "ChiChi",false, "US8");
 let cynthia = new Queen("Cynthia Lee Fontaine", 4, 4, 7, 6, 4, 7, 6, "Cynthia",false, "US8");
 let dax = new Queen("Dax ExclamationPoint", 5, 6, 6, 5, 6, 5, 4, "Dax",false, "US8");
