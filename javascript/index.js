@@ -3172,7 +3172,7 @@ function contestantProgress() {
                 placement.setAttribute("style", "font-weight: bold; background-color: royalblue; color: white;");
             }
             else if (placement.innerHTML == "TOP2") {
-                placement.setAttribute("style", "background-color: deepskyblue;");
+                placement.setAttribute("style", "background-color: Yellow;");
             }
             else if (placement.innerHTML == "TOP 3<br><small>Win round 1</small>") {
                 placement.setAttribute("style", "font-weight: bold; background-color: #ffd100; color: #000;");
@@ -3352,7 +3352,7 @@ function contestantProgress() {
                     placement.setAttribute("style", "font-weight: bold; background-color: royalblue; color: white;");
                 }
                 else if (placement.innerHTML == "TOP2") {
-                    placement.setAttribute("style", "background-color: deepskyblue;");
+                    placement.setAttribute("style", "background-color: yellow;");
                 }
                 else if (placement.innerHTML == "TOP 3<br><small>Win round 1</small>") {
                     placement.setAttribute("style", "font-weight: bold; background-color: #ffd100; color: #000;");
@@ -3529,7 +3529,7 @@ function contestantProgress() {
                 placement.setAttribute("style", "font-weight: bold; background-color: royalblue; color: white;");
             }
             else if (placement.innerHTML == "TOP2") {
-                placement.setAttribute("style", "background-color: deepskyblue;");
+                placement.setAttribute("style", "background-color: yellow;");
             }
             else if (placement.innerHTML == "TOP 3<br><small>Win round 1</small>") {
                 placement.setAttribute("style", "font-weight: bold; background-color: #ffd100; color: #000;");
