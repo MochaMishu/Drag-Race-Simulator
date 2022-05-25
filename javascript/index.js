@@ -3240,7 +3240,7 @@ function contestantProgress() {
                 placement.setAttribute("style", "background-color: gray");
             }
             else if (placement.innerHTML == "WIN ") {
-                placement.setAttribute("style", "font-weight: bold; background-color: deepskyblue;");
+                placement.setAttribute("style", "font-weight: bold; background-color: yellow;");
             }
             else if (placement.innerHTML == "  WIN") {
                 placement.setAttribute("style", "font-weight: bold; background-color: #2238B4; color: white;");
