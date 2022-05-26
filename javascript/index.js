@@ -9424,7 +9424,7 @@ let ginger = new Queen("Ginger Minj", 14, 12, 8, 9, 15, 7, 12, "Ginger",false, "
 let jaidynn = new Queen("Jaidynn Diore Fierce", 9, 7, 8, 6, 6, 7, 11, "Jaidynn",false, "US7");
 let jasmine = new Queen("Jasmine Masters", 3, 4, 6, 5, 2, 7, 6, "Jasmine",false, "US7");
 let kandy = new Queen("Kandy Ho", 4, 4, 7, 5, 4, 7, 10, "KandyH",false, "US7");
-let katya = new Queen("Katya", 9, 12, 9, 7, 12, 10, 10, "Katya",false, "US7");
+let katya = new Queen("Katya", 10, 11, 9, 7, 12, 10, 10, "Katya",false, "US7");
 let kennedy = new Queen("Kennedy Davenport", 9, 8, 10, 8, 11, 10, 14, "Kennedy", false,"US7");
 let max = new Queen("Max", 10, 7, 5, 8, 4, 8, 5, "Max",false, "US7");
 let fame = new Queen("Miss Fame", 8, 4, 5, 11, 3, 10, 5, "MissFame",false, "US7");
@@ -9432,7 +9432,7 @@ let kasha = new Queen("Mrs. Kasha Davis", 11, 8, 9, 8, 6, 8, 7, "Kasha",false, "
 let pearl = new Queen("Pearl", 7, 10, 8, 9, 10, 9, 5, "Pearl",false, "US7");
 let sashab = new Queen("Sasha Belle", 6, 6, 4, 4, 6, 6, 4, "SashaB",false, "US7");
 let tempest = new Queen("Tempest DuJour", 6, 6, 5, 3, 6, 7, 4, "Tempest",false, "US7");
-let trixie = new Queen("Trixie Mattel", 13, 10, 6, 10, 11, 10, 5, "Trixie",false, "US7");
+let trixie = new Queen("Trixie Mattel", 13, 13, 7, 12, 13, 10, 6, "Trixie",false, "US7");
 let violet = new Queen("Violet Chachki", 6, 7, 8, 15, 8, 13, 8, "Violet",false, "US7");
 let us_season7 = [ginger, jaidynn, jasmine, kandy, katya, kennedy, max, fame, kasha, pearl, sashab, tempest, trixie, violet];
 //SEASON 8:  acting, comedy, dance, design, improv, runway, lipsync
